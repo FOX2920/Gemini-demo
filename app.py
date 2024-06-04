@@ -1,12 +1,8 @@
-import os
 
 import streamlit as st
-from dotenv import load_dotenv
 import google.generativeai as gen_ai
 
 
-# Tải các biến môi trường
-load_dotenv()
 
 # Cấu hình cài đặt trang Streamlit
 st.set_page_config(
@@ -15,10 +11,8 @@ st.set_page_config(
     layout="centered",  # Tùy chọn bố cục trang
 )
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-
 # Thiết lập mô hình AI Gemini-Pro của Google
-gen_ai.configure(api_key=GOOGLE_API_KEY)
+gen_ai.configure(api_key='AIzaSyCb_qq6aqOHM_6jwMTJiW0v0kb9FkPnsos')
 model = gen_ai.GenerativeModel('gemini-pro')
 
 
