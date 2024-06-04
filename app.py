@@ -1,8 +1,5 @@
-
 import streamlit as st
 import google.generativeai as gen_ai
-
-
 
 # Cấu hình cài đặt trang Streamlit
 st.set_page_config(
